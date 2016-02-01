@@ -4,7 +4,7 @@
 
 html {
   font-family: Verdana,Arial;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 body {
@@ -20,7 +20,6 @@ body {
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
 
-  font-weight: bold;
   text-align: center;
 }
 
@@ -39,11 +38,10 @@ body {
 
 .main {
   text-align: left;
-  background: tomato;
 }
 
 .aside-1 {
-  background: gold;
+  text-align: left;
 }
 
 .aside-2 {
@@ -55,14 +53,13 @@ body {
 }
 
 @media all and (min-width: 800px) {
-  .main    { flex: 3 0px; }
+  .main    { flex: 7 0px; }
+  .aside   { flex: 1 0px; }
   .aside-1 { order: 1; }
   .main    { order: 2; }
   .aside-2 { order: 3; }
   .footer  { order: 4; }
 }
-
-
 
 .navigation {
   list-style: none;
@@ -75,6 +72,7 @@ body {
   display: flex;
   -webkit-flex-flow: row wrap;
   justify-content: flex-end;
+  font-weight:
 }
 
 .navigation a {
@@ -85,7 +83,7 @@ body {
 }
 
 .navigation a:hover {
-  background: #00b7f5;
+  background: #0091c2;
 }
 
 @media all and (max-width: 800px) {
@@ -112,3 +110,80 @@ body {
   }
 }
 
+.checkbox, .radio {
+  position: relative;
+  display: block;
+  margin: 10px;
+  margin-bottom: 10px;
+}
+
+.form {
+  display: block;
+  margin-top: 0em;
+}
+
+table {
+  width: 100%;
+  max-width: 100%;
+  font-size: 0.95em;
+}
+
+thead {
+  color: white;
+}
+
+thead th {
+  background-color: black;
+  padding: 1em;
+}
+
+thead.hour th {
+  background-color: LightSalmon;
+  text-align: left;
+  padding: .5em;
+  font-size: .8em;
+}
+
+td {
+  border-bottom:1pt solid LightSteelBlue ;
+}
+
+tr:nth-child(odd) {
+  background-color: Lavender;
+
+}
+
+.candidate {
+  position: relative;
+  display: block;
+  margin: 3px;
+  margin-bottom: 3px;
+  font-size: 10px;
+}
+
+.republican {
+  display: inline-block;
+  background: #dc4e45;
+  border-radius: 3px;
+  height: 18px;
+  width: 18px;
+  text-align: center;
+}
+.republican:before {
+  content: 'R';
+  color: #ffffff;
+  font-weight: bold;
+}
+.democratic {
+  display: inline-block;
+  background: #2a95ff;
+  border-radius: 3px;
+  height: 18px;
+  width: 18px;
+  text-align: center;
+}
+.democratic:before {
+  content: 'D';
+  color: #ffffff;
+  font-weight: bold;
+}
