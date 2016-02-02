@@ -150,7 +150,6 @@ td {
 
 tr:nth-child(odd) {
   background-color: Lavender;
-
 }
 
 .candidate {
@@ -168,12 +167,15 @@ tr:nth-child(odd) {
   height: 18px;
   width: 18px;
   text-align: center;
+  vertical-align: middle;
+
 }
 .republican:before {
   content: 'R';
   color: #ffffff;
   font-weight: bold;
 }
+
 .democratic {
   display: inline-block;
   background: #2a95ff;
